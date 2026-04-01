@@ -10,6 +10,7 @@ export const searchRecipes = async (query) => {
         query: query,
         diet: "vegetarian",
         number: 10,
+        addRecipeInformation: true,
         apiKey: API_KEY,
       },
     }

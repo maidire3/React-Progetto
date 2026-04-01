@@ -5,18 +5,27 @@ function SearchBar({ onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSearch(value);
+    const trimmedValue = value.trim();
+
+    if (!trimmedValue) {
+      return;
+    }
+
+    onSearch(trimmedValue);
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="search-form" onSubmit={handleSubmit}>
       <input
+        className="search-input"
         type="text"
-        placeholder="Search vegetarian recipes..."
+        placeholder="Cerca ricette vegetariane..."
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />
-      <button type="submit">Search</button>
+      <button className="search-button" type="submit">
+        Cerca
+      </button>
     </form>
   );
 }
