@@ -1,11 +1,13 @@
 import { useState } from "react";
 import SearchBar from "../components/SearchBar";
+import { searchRecipes } from "../services/api";
 
 function Home() {
   const [recipes, setRecipes] = useState([]);
 
-  const handleSearch = (value) => {
-    console.log("Searching for:", value);
+  const handleSearch = async (query) => {
+    const results = await searchRecipes(query);
+    setRecipes(results);
   };
 
   return (
