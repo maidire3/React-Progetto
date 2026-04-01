@@ -17,3 +17,16 @@ export const searchRecipes = async (query) => {
 
   return response.data.results;
 };
+
+export const getRecipeDetail = async (id) => {
+  const response = await axios.get(
+    `https://api.spoonacular.com/recipes/${id}/information`,
+    {
+      params: {
+        apiKey: API_KEY,
+      },
+    }
+  );
+
+  return response.data;
+};

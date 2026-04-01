@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SearchBar from "../components/SearchBar";
+import RecipeCard from "../components/RecipeCard";
 import { searchRecipes } from "../services/api";
 
 function Home() {
@@ -15,12 +16,11 @@ function Home() {
       <h2>Search Recipes</h2>
       <SearchBar onSearch={handleSearch} />
 
-      {recipes.map((recipe) => (
-        <div key={recipe.id}>
-          <h3>{recipe.title}</h3>
-          <img src={recipe.image} width="200" />
-        </div>
-      ))}
+      <div>
+        {recipes.map((recipe) => (
+          <RecipeCard key={recipe.id} recipe={recipe} />
+        ))}
+      </div>
     </div>
   );
 }
