@@ -1,5 +1,6 @@
 {
   "name": "react-progetto",
+  "author": "Davide Cavallaro",
   "private": true,
   "version": "0.0.0",
   "type": "module",
