@@ -105,6 +105,7 @@ npm run lint
 - salvataggio ricette preferite
 - paginazione o caricamento progressivo dei risultati
 - refactor della gestione API con variabili ambiente per la chiave privata
+- API Key in un file .env
 
 ## Autore
 
