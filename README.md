@@ -1,6 +1,6 @@
 # Green Kitchen
 
-Visionabile su Netlify al link: [https://inspiring-hamster-199f24.netlify.app/](https://inspiring-hamster-199f24.netlify.app/)
+Visionabile su Netlify al link: [https://greenkitchen-davide.netlify.app/](https://greenkitchen-davide.netlify.app/)
 
 Green Kitchen e' una web app realizzata con React e Vite che permette di cercare ricette vegetariane tramite API Spoonacular e visualizzarle in un'interfaccia semplice, moderna e responsive.
 
